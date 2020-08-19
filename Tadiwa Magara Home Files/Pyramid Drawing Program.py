@@ -7,15 +7,15 @@ def InputMaxNunmberOfSymbol():
         return Number
 
 def SetValues():
-    Symbol = input("What symbol do you want to use? ")
+    Symbol = input("What symbol do you want to use?: ")
     MaxSymbols = InputMaxNunmberOfSymbol()
     Spaces = (MaxSymbols + 1) // 2
     Symbols = 1
     return Symbol, MaxSymbols, Spaces, Symbols
 
 def OutputChars(Number, Symbol):
-    for Count in range (Number):
-        print(Symbol, end=='')
+    for count in range (Number):
+        print(Symbol, end='')
 
 def AdjustValuesForNextRow(Spaces, Symbols):
     Spaces = Spaces - 1
